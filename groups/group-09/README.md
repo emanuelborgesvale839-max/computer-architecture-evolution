@@ -2,7 +2,7 @@
 
 ## Architecture
 
-To be defined
+GPU (Graphics Processing Unit)
 
 ---
 
