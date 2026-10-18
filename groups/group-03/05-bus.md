@@ -92,3 +92,23 @@ A principal limitação da MISD é a dependência de um único fluxo de dados qu
 - **Aplicabilidade restrita:** poucos problemas se beneficiam de várias operações distintas sobre o mesmo dado, e por isso a MISD quase não existe comercialmente.
 - **Escalabilidade limitada:** adicionar unidades aumenta a carga de distribuição e de comparação.
 - **Dependência do ponto de coleta:** se o sensor ou o ESP32 falha, todas as análises ficam sem dado.
+
+## 8. Fontes
+
+- DUNCAN, R. A survey of parallel computer architectures. Computer, IEEE, fev. 1990.
+
+- FLYNN, M. J. Very high-speed computing systems. Proceedings of the IEEE, v. 54, p. 1901–1909, dez. 1966.
+
+- FLYNN, M. J. Some computer organizations and their effectiveness. IEEE Transactions on Computers, v. C-21, n. 9, p. 948–960, set. 1972. DOI: 10.1109/TC.1972.5009071.
+
+- HENNESSY, J. L.; PATTERSON, D. A. Computer architecture: a quantitative approach. [S. l.]: Elsevier.
+
+- KUNG, H. T. Why systolic architectures? Computer, IEEE, v. 15, n. 1, p. 37–46, jan. 1982.
+
+- KUNG, H. T.; LEISERSON, C. E. Systolic arrays (for VLSI). In: SPARSE MATRIX PROCEEDINGS 1978. [S. l.]: SIAM, 1979. p. 256–282.
+
+- NULL, L.; LOBUR, J. Essentials of computer organization and architecture. 5. ed. Burlington: Jones & Bartlett Learning, 2018.
+
+- SPECTOR, A.; GIFFORD, D. The space shuttle primary computer system. Communications of the ACM, v. 27, n. 9, p. 874–900, set. 1984. DOI: 10.1145/358234.358246.
+
+- TANENBAUM, A. S. Organização estruturada de computadores. 5. ed. [S. l.]: Pearson Prentice Hall, 2009.
