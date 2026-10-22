@@ -108,28 +108,9 @@ Execute
 Execução: as três análises processam a leitura, cada uma com sua instrução. A unidade de decisão combina os três resultados e define o estado (normal, alerta ou anomalia), que é atualizado no gráfico das leituras e no registro de alertas.
 
 3.7 CPU Diagram
-mesmo dado
-mesmo dado
-mesmo dado
-Sensor de temperaturamede a temperatura
-ESP32lê, marca o horário e envia
-Wi-Fitransmite ao computador
-Pythonrecebe o dado único
-Análise de LIMITEdentro ou acima do limite
-Análise de HISTÓRICOsubiu, caiu ou estável
-Análise de ANOMALIAnormal ou fora do padrão
-Unidade de decisãocombina os resultados
-Estado do sistema:NORMAL | ALERTA |ANOMALIA
-Gráfico das leituras
-Registro de alertas
 
-Mapeamento com a taxonomia de Flynn:
+<img width="723" height="1210" alt="image" src="https://github.com/user-attachments/assets/02621aba-756a-4364-aee3-b1d1b02f4513" />
 
-Single Data(temperatura)
-Instrução 1Limite
-Instrução 2Histórico
-Instrução 3Anomalia
-Resultadoconsolidado
 3.8 Advantages
 Decisão mais confiável: o mesmo dado é verificado de três formas diferentes antes de o sistema indicar um estado.
 Independência das análises: cada análise pode ser alterada, testada ou corrigida sem afetar as outras.
