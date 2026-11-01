@@ -40,7 +40,7 @@ O dado vai de um para muitos, as instruções ficam separadas por fluxo e os res
 - **Resultados:** voltam das UPs para a unidade de comparação ou de saída.
 
 **No protótipo:** o caminho é Sensor → ESP32 → Wi-Fi → Python → Limite / Histórico / Anomalia → Resultado → SQL → Dashboard.
-
+```
  SENSOR ──► ESP32 ──Wi-Fi──► PYTHON (servidor)
                                      │  
                                      |  mesmo dado (1 para muitos) 
@@ -55,7 +55,7 @@ O dado vai de um para muitos, as instruções ficam separadas por fluxo e os res
                                      │
                                      ▼
                                  Banco SQL  ──►   Dashboard web 
-
+```
 A leitura sai do Python em um único fluxo e chega às três análises ao mesmo tempo; só depois os resultados se reúnem.
 
 ## 5. Mecanismos de comunicação existentes
