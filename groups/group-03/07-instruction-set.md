@@ -167,27 +167,40 @@ from statistics import mean, pstdev
 
 LIMITE_C = 30.0
 historico = deque(maxlen=60)
+# Lock para proteger o acesso ao histórico partilhado
+historico_lock = threading.Lock()
 
 def analisa_limite(t):
     return "ALERTA" if t > LIMITE_C else "OK"
 
 def analisa_historico(t):
-    return t - mean(historico) if historico else 0.0
+    # Garante acesso exclusivo para calcular a média de forma segura
+    with historico_lock:
+        if not historico:
+            return 0.0
+        media = mean(historico)
+    return t - media
 
 def analisa_anomalia(t):
-    if len(historico) < 10:
-        return False
-    return abs(t - mean(historico)) > 3 * (pstdev(historico) or 0.1)
+    # Captura uma "fotografia" estável dos dados para os dois cálculos estatísticos
+    with historico_lock:
+        if len(historico) < 10:
+            return False
+        media = mean(historico)
+        desvio = pstdev(historico)
+        
+    return abs(t - media) > 3 * (desvio or 0.1)
 
-ANALISES = {"limite": analisa_limite,
-            "historico": analisa_historico,
+ANALISES = {"limite": analisa_limite, 
+            "historico": analisa_historico, 
             "anomalia": analisa_anomalia}
 filas = {nome: queue.Queue() for nome in ANALISES}
 
 def trabalhador(nome, funcao):
     while True:
         t = filas[nome].get()
-        print(nome, funcao(t))
+        resultado = funcao(t)
+        print(nome, resultado)
         filas[nome].task_done()
 
 for nome, funcao in ANALISES.items():
@@ -198,7 +211,10 @@ def nova_leitura(t):           # chamada a cada leitura que chega do ESP32
         fila.put(t)            # o MESMO valor vai para as três análises
     for fila in filas.values():
         fila.join()            # espera as três terminarem
-    historico.append(t)
+        
+    # Atualiza a estrutura global com proteção de escrita
+    with historico_lock:
+        historico.append(t)
 ```
 
 **Exemplos característicos dos outros casos:**
