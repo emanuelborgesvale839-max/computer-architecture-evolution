@@ -46,3 +46,38 @@
 - NVIDIA. *CUDA C++ Programming Guide: SIMT Architecture*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#simt-architecture.
 - NVIDIA. *CUDA C++ Programming Guide: Asynchronous Concurrent Execution*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#asynchronous-concurrent-execution.
 - AMD. *ROCm Documentation: Hardware Implementation*. Disponível em: https://rocm.docs.amd.com/projects/HIP/en/docs-7.0.2/understand/hardware_implementation.html.
+
+## G. Controle e sequência de operações
+
+- NVIDIA. *CUDA C++ Programming Guide: Thread Hierarchy*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#thread-hierarchy.
+- NVIDIA. *CUDA C++ Programming Guide: Synchronization Functions*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#synchronization-functions.
+- NVIDIA. *CUDA C++ Programming Guide: Control Flow*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#control-flow.
+
+## H. ISA e modelo de programação
+
+- NVIDIA. *PTX ISA Documentation*. Disponível em: https://docs.nvidia.com/cuda/parallel-thread-execution/.
+- NVIDIA. *CUDA C++ Programming Guide: Programming Model*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#programming-model.
+- NVIDIA. *CUDA C++ Programming Guide: Programming Interface*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#programming-interface.
+- Khronos Group. *OpenCL Specification*. Disponível em: https://registry.khronos.org/OpenCL/specs/.
+- AMD. *ROCm Documentation: HIP Programming Guide*. Disponível em: https://rocm.docs.amd.com/projects/HIP/en/latest/how-to/hip-porting.html.
+
+## I. Endereçamento e acesso aos dados
+
+- NVIDIA. *CUDA C++ Programming Guide: Device Memory Accesses*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#device-memory-accesses.
+- NVIDIA. *CUDA C++ Programming Guide: Thread Hierarchy*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#thread-hierarchy.
+- NVIDIA. *CUDA C++ Best Practices Guide: Coalesced Access to Global Memory*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory.
+- NVIDIA. *CUDA C++ Programming Guide: Shared Memory*. Disponível em: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#shared-memory.
+
+## J. Evolução, aplicações e sistemas heterogêneos
+
+- Krizhevsky, Alex; Sutskever, Ilya; Hinton, Geoffrey E. *ImageNet
+  Classification with Deep Convolutional Neural Networks*. NeurIPS, 2012.
+  Disponível em: https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf.
+- Nakamoto, Satoshi. *Bitcoin: A Peer-to-Peer Electronic Cash System*.
+  Disponível em: https://bitcoin.org/bitcoin.pdf.
+- NVIDIA. *CUDA C++ Programming Guide: Unified Memory*. Disponível em:
+  https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#unified-memory.
+- NVIDIA. *Grace Hopper Superchip*. Disponível em:
+  https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/.
+- Apple. *About the Apple GPU*. Disponível em:
+  https://developer.apple.com/documentation/metal/about-the-apple-gpu.
